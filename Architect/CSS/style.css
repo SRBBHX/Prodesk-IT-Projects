@@ -1,0 +1,365 @@
+.logo-circle {
+    background-image: url('/Architect/images/Main_logo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Navbar brand logo circle with icon */
+.navbar-brand .logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0b2245;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    user-select: none;
+    letter-spacing: 2px;
+}
+
+/* Hero background and overlay */
+.hero {
+    position: relative;
+    background: url('/Architect/images/Hero\ bg.png') center center no-repeat;
+    background-size: cover;
+    height: 700px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 34, 69, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.hero-overlay h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 3.75rem;
+    }
+}
+
+/* Search bar overlapping hero bottom */
+.search-bar-container {
+    max-width: 900px;
+    margin: -19px auto 40px;
+    padding: 0 15px;
+    z-index: 1001;
+    position: relative;
+}
+
+.search-input-group {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.1);
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+
+/* Section heading styling */
+.section-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0b2245;
+}
+
+.section-subheading {
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.section-divider {
+    width: 28rem;
+    border-top: 2px solid #0b2245;
+    margin: 1rem auto 1.25rem;
+}
+
+/* Steps icons container */
+.steps-section .step {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 0.05);
+    padding: 2rem 1.5rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.steps-section .step:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 1.5rem rgb(0 0 0 / 0.15);
+}
+
+.steps-section .step-number {
+    font-weight: 900;
+    font-size: 4rem;
+    color: #dee2e6;
+    user-select: none;
+}
+
+.steps-section .step-icon {
+    font-size: 3rem;
+    margin: 1rem 0 1rem;
+    color: #0b2245;
+}
+
+.steps-section .step-text {
+    font-weight: 700;
+    color: #0b2245;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Contact Section background and form styles */
+.contact-section {
+    
+    background: url('/Architect/images/Contact\ bg.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 3rem 0;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 34, 69, 0.85);
+    z-index: 0;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-section h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-section .form-control {
+    border-radius: 0.25rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.contact-section textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Architect profiles section */
+.profiles-section {
+    padding: 3rem 1rem;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem 2.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 0.1);
+    margin: 1rem;
+    max-width: 280px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.profile-card img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0b2245;
+    margin-bottom: 1rem;
+}
+
+.profile-name {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0b2245;
+    margin-bottom: 0.25rem;
+}
+
+.profile-title {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-rating {
+    color: #d6336c;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+/* Navigation arrows */
+.profile-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8f9fa;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b2245;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 0.15);
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.profile-arrow:hover {
+    background-color: #0b2245;
+    color: white;
+}
+
+.profile-arrow-left {
+    left: -50px;
+}
+
+.profile-arrow-right {
+    right: -50px;
+}
+
+/* View All Profiles button */
+.btn-view-all {
+    background-color: #0b2245;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-all:hover {
+    background-color: #093857;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: url('/Architect/images/NewsLetter\ bg.png') center center no-repeat;
+    background-size: cover;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.newsletter-section h3 {
+    border-radius: 5px;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    
+    margin-bottom: 1rem;
+}
+
+.newsletter-input-group {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.newsletter-input-group .form-control {
+    border-radius: 0.375rem 0 0 0.375rem;
+    border: none;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    height: 44px;
+}
+
+.newsletter-input-group .btn {
+    border-radius: 0 0.375rem 0.375rem 0;
+    background-color: #0b2245;
+    border: none;
+    color: white;
+    padding: 0 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 44px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-input-group .btn:hover {
+    background-color: #093857;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0b2245;
+    color: white;
+    padding: 3rem 1rem 1rem;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-logo .logo-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+}
+
+.footer-section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.social-icons a {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d6336c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 575.98px) {
+
+    .profile-arrow-left,
+    .profile-arrow-right {
+        display: none;
+    }
+}
